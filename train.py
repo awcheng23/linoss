@@ -305,9 +305,6 @@ def train_model(
                 jnp.save(output_dir + "/test_metric.npy", test_metric_save)
 
     print(f"Test metric: {test_metric}")
-    f = open('results/'+str(dataset_name)+'/id_' + str(id) + '.txt', 'a')
-    f.write(str(test_metric * 100.) + '\n')
-    f.close()
 
     steps = jnp.arange(0, num_steps + 1, print_steps)
     all_train_metric = jnp.array(all_train_metric)
