@@ -1,0 +1,9 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# LinOSS outputs and data
+outputs/
+data_dir/processed/
+*.pkl
+*.pt
